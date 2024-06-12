@@ -1,0 +1,6 @@
+[submodule "TensorRT-LLM"]
+	path = TensorRT-LLM
+	url = https://github.com/NVIDIA/TensorRT-LLM.git
+[submodule "Meta-Llama-3-8B"]
+	path = Meta-Llama-3-8B
+	url = https://huggingface.co/NousResearch/Meta-Llama-3-8B
