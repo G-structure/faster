@@ -13,7 +13,7 @@ sudo docker run --rm --gpus all --entrypoint /bin/bash -it -v ${HOME}/wagmi/comp
 ```
 
 **Run the following commands in the bash of the docker container**
-## Build Models (only needs to be once)
+## Build Models (only needs to be ran once)
 ```
 python3 /app/TensorRT-LLM/examples/llama/convert_checkpoint.py --model_dir /app/Meta-Llama-3-8B --output_dir /compiled_models/llama3 --tp_size 1
 trtllm-build --checkpoint_dir /compiled_models/llama3 \
