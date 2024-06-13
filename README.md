@@ -1,5 +1,6 @@
 # Setup
 ```
+git submodule update --init --recursive 
 apt-get update && apt-get -y install git git-lfs
 sudo docker build -t faster .
 sudo docker run --rm --gpus all --entrypoint /bin/bash -it -v /home/ubuntu/wagmi/compiled_models:/compiled_models faster
