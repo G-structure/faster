@@ -20,6 +20,7 @@ RUN mkdir /models
 # Copy the locally cloned folders into the container
 COPY Meta-Llama-3-8B /app/Meta-Llama-3-8B
 COPY TensorRT-LLM /app/TensorRT-LLM
+COPY lfg /app/lfg
 
 # Set the working directory
 WORKDIR /app
