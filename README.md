@@ -1,7 +1,8 @@
 # Setup
 ```
-git submodule update --init --recursive 
 apt-get update && apt-get -y install git git-lfs
+git install lfs
+git submodule update --init --recursive 
 sudo docker build -t faster .
 sudo docker run --rm --gpus all --entrypoint /bin/bash -it -v /home/ubuntu/wagmi/compiled_models:/compiled_models faster
 python3 /app/TensorRT-LLM/examples/llama/convert_checkpoint.py --model_dir /app/Meta-Llama-3-8B --output_dir /compiled_models/llama3 --tp_size 1
