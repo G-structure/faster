@@ -1,3 +1,4 @@
+~13,0000 tokens/sec on H100 and llama-3-8B
 # Setup
 ```
 apt-get update && apt-get -y install git git-lfs
